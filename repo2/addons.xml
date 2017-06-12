@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.fabiobox"
+       name="[COLOR white][B]FABIO[/B][/COLOR] [COLOR red][B]BOX[/B][/COLOR] [COLOR white][B]SELECT[/B][/COLOR]"
+       version="1.0.1"
+       provider-name="KodishMc">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="plugin.video.m3u" version="1.0.0"/>
+
+   </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Addon com minhas preferencias Particulares</summary>
+    <description lang="en">Addon com minhas preferencias Particulares</description>
+	<platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.m3u" name="M3U Player" version="1.0.0" provider-name="KodishMC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">M3U Player</summary>
+    <description lang="en">M3U Player</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.PrimePlay" name="[COLOR blue][I][B]Prime Play[/B][/I][/COLOR]" version="[COLOR green][B]0.0.1[/COLOR][/B]" provider-name="[COLOR green][B] Prime Play [/COLOR][/B]">
+    <extension point="xbmc.addon.repository" name="PrimePlay.py">
+        <info compressed="false">http://lexdan.co/a/Plugins/addons.xml</info>
+		<checksum>http://lexdan.co/a/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://lexdan.co/a/Plugins/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Prime Play</summary>
+        <description>Filmes, Series, Animes e Desenhos</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
