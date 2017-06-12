@@ -19,7 +19,7 @@
     <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
-
+	<import addon="plugin.video.m3u" version="1.0.0"/>
    </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>

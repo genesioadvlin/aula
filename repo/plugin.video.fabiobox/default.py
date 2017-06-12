@@ -654,6 +654,29 @@ def getItems(items,fanart,dontLink=False):
                             #m3u = "plugin://plugin.video.playthis/?mode=play&player=false&history=false&path=" + i.string
                             yutube = 'plugin://plugin.video.youtube/playlist/'+ i.string +'/' 
                             url.append(yutube)
+
+                elif len(item('torrent')) >0:
+                    for i in item('torrent'):
+                        if not i.string == None:
+                            keychave = xbmc.Keyboard('', '[COLOR yellow]Digite 1 Quasar 2 Pulsar 3 Yatp[/COLOR]:')
+                            keychave.doModal()
+                            chave = keychave.getText()
+
+                            key = int(""+chave+"")
+
+                            if key == 1:
+                                torrent = "plugin://plugin.video.quasar/play?uri="+ i.string +""
+                                url.append(torrent)
+
+                            if key == 2:
+                                torrent = "plugin://plugin.video.pulsar/play?uri="+ i.string +""
+                                url.append(torrent)
+
+                            if key == 3:
+                                torrent = "plugin://plugin.video.yatp/?action=play&torrent="+ i.string +""
+                                url.append(torrent)
+
+                                
                             
                             
 							
