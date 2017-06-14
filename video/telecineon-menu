@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<layoutype>thumbnail</layoutype>
+<channels>
+<channel>
+<name>Filmes</name>
+<thumbnail>https://ia601500.us.archive.org/29/items/filmes_201706/filmes.png</thumbnail>
+<externallink>https://raw.githubusercontent.com/kodishmcbr/aula/master/video/telecineon</externallink>
+<fanart>http://interneeduca.com.br/wp-content/uploads/2016/07/filmes.jpg</fanart>
+<info></info>
+</channel>
+
+</channels>
